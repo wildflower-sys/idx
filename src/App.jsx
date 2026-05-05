@@ -115,7 +115,7 @@ Balas HANYA dengan JSON valid:
 
     try {
       const data = await callAI({
-        model: "claude-sonnet-4-20250514",
+        model: "claude-sonnet-4-5",
         max_tokens: 3000,
         tools: [{ type: "web_search_20250305", name: "web_search" }],
         messages: [{ role: "user", content: prompt }],
@@ -264,7 +264,7 @@ Balas HANYA dengan JSON valid:
 
     try {
       const data = await callAI({
-        model: "claude-sonnet-4-20250514",
+        model: "claude-sonnet-4-5",
         max_tokens: 2000,
         tools: [{ type: "web_search_20250305", name: "web_search" }],
         messages: [{ role: "user", content: prompt }],
@@ -292,7 +292,7 @@ Konfirmasi dengan JSON: {"success": true, "message": "..."} atau {"success": fal
 
     try {
       const data = await callAI({
-        model: "claude-sonnet-4-20250514",
+        model: "claude-sonnet-4-5",
         max_tokens: 1000,
         mcp_servers: [{ type: "url", url: "https://drivemcp.googleapis.com/mcp/v1", name: "google-drive-mcp" }],
         messages: [{ role: "user", content: prompt }],
